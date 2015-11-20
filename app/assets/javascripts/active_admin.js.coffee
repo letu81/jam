@@ -4,7 +4,6 @@
 #= require fancybox
 #= require jquery
 #= require jquery-ui
-#= require jquery-ui-timepicker-addon
 #= require admin/jquery.flot
 jQuery ->
   $('a.fancybox').fancybox(

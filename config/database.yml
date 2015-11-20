@@ -17,4 +17,4 @@ development:
   database: jam_dev
 production:
   <<: *default
-  database: jam_pro
+  database: jam_dev
