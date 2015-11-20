@@ -1,0 +1,4 @@
+en:
+  activerecord:
+      models:
+        service: '服务号'

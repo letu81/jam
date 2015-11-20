@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="keywords"
+        content="美型,健视网络,mx,MX,lbs,地理位置,交友,iphone,android,app"/>
+  <title>美型-美于身|健于型</title>
+  <meta name="description"
+        content="美型是一款基于地理位置的移动社交软件，你可以通过“美型”认识附近健身的人，免费发送消息、语音、照片、视频以及精准的地理位置和身边的人更好的交流。你可以使用美型展现个人的健身技巧与魅力，丰富自己的社交圈，你可以通过这个平台和自己心仪的健身教练进行预约和沟通，让私人健身教练不再是奢侈的享受，更能服务于大众。“美型”专注于移动互联网，专注于移动社交，专注于社交模式探索并满足健身人群的社交愿望。"/>
+  <%= stylesheet_link_tag 'home/style' %>
+  <%= javascript_include_tag 'home/jquery-1.7.1.min',
+                             'home/homeban',
+                             'home/jquery.touchSlider',
+                             'home/plus2015',
+                             'home/stellar' %>
+
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="header" id="topbar">
+  <div class="headercon">
+    <div class="logo">
+      <a href="#" class="background: url(<%= image_path('home/logo.png') %>) no-repeat center">佳安美</a>
+    </div>
+    <ul class="nav">
+      <li><%= link_to('首页', '/home/index') %></li>
+      <li><%= link_to('关于我们', '/home/about') %></li>
+      <li><%= link_to('动态', '/home/dynamic') %></li>
+      <li><%= link_to('商务合作', '/home/contact') %></li>
+      <li><%= link_to('加入我们', '/home/join') %></li>
+    </ul>
+    <div class="clear"></div>
+  </div>
+</div>
+<div class="bnbut">
+  <a href="https://itunes.apple.com/app/id937987572" title="苹果下载"><%=image_tag('home/ios.png')%></a>
+ <!--下载按钮开始-->
+<a href="http://bcs.91.com/pcsuite-dev/apk/592db31a81ffafb6379b7b7fc064856f.apk?p=android&f_name=%u7F8E%u578B&f_version=v3.1.0&icon=http%3A%2F%2Fimage.e-mxing.com%2Ficon.png&channelid=1&f_identify=com.example.mx_app"  name="美型" onclick="return Key.Open(this, 'android');" SoftIcon="http://image.e-mxing.com/icon.png" title="通过91助手下载" ><img id="imgPreview" alt="91助手一键安装" src="http://zs.91.com/upload/images/api/v6/white_210X77.png" /></a>
+<!--下载按钮结束-->
+<!--请把这段代码放在页面最底部加载-->
+<script src="http://zs.91.com/script/api/key121121.js" charset="utf-8"></script>
+<!--代码结束-->
+  <i class="codebut" onClick="code()"></i>
+
+  <div class="codebox" style="display:none">
+    <em onClick="closes()" class="close">关闭</em>
+    <dl>
+      <dt><img src="<%= image_path('home/code1.png') %>"><em>用户端</em></dt>
+      <dd><img src="<%= image_path('home/code2.png') %>"><em>私教端</em></dd>
+    </dl>
+  </div>
+</div>
+<!--banner-->
+<div class="main_visual">
+  <div class="flicking_con">
+    <div class="flicking_inner">
+      <a href="javascript:void(0)" title="1"></a>
+      <a href="javascript:void(0)" title="2"></a>
+      <a href="javascript:void(0)" title="3"></a>
+    </div>
+  </div>
+  <div class="main_image">
+    <ul>
+      <li><span style="background: url(<%=image_path('home/banner_01.png')%>) no-repeat center"></span></li>
+      <li><span style="background: url(<%=image_path('home/banner_02.png')%>) no-repeat center"></span></li>
+      <li><span style="background: url(<%=image_path('home/banner_03.png')%>)  no-repeat center"></span></li>
+    </ul>
+  </div>
+  <a href="javascript:;" id="btn_prev"></a>
+  <a href="javascript:;" id="btn_next"></a>
+</div>
+<!--banner End-->
+<div class="activebg onebg" data-stellar-background-ratio="0.05"></div>
+<div style="height: 680px;background: url(<%=image_path('home/picture_01.png')%>) no-repeat center">
+  <div style=" width: 1200px;
+          height: 680px;
+          background: url(<%=image_path('home/picture_01.png')%>) no-repeat center"></div>
+</div>
+<div class="activebg twobg" data-stellar-background-ratio="0.05"></div>
+<div style="height: 680px;background: url(<%=image_path('home/picture_02.png')%>) no-repeat center">
+  <div style=" width: 1200px;
+          height: 680px;
+          background: url(<%=image_path('home/picture_02.png')%>) no-repeat center"></div>
+</div>
+<div class="activebg thirdbg" data-stellar-background-ratio="0.05"></div>
+<div style="height: 680px;background: url(<%=image_path('home/picture_03.png')%>) no-repeat center">
+  <div style=" width: 1200px;
+          height: 680px;
+          background: url(<%=image_path('home/picture_03.png')%>) no-repeat center"></div>
+</div>
+<!--footer-->
+<div class="footer">
+  <div class='container footer-info'>
+        <ul class='menu-list'>
+          <li>
+            <h3 class='menu-tit'>
+              关于佳安美
+              <ul class='sub-menu-list'>
+                <li>
+                  <a href="/about">关于佳安美</a>
+                </li>
+                <li>
+                  <a href="/contact">联系我们</a>
+                </li>
+                <li>
+                  <a href="/jobs">诚聘英才</a>
+                </li>
+              </ul>
+            </h3>
+          </li>
+          <li>
+            <h3 class='menu-tit'>
+              佳安美动态
+              <ul class='sub-menu-list'>
+                <li>
+                  <a href="/news">新闻与杂志</a>
+                </li>
+              </ul>
+            </h3>
+          </li>
+          <li>
+            <h3 class='menu-tit'>
+              售后服务
+              <ul class='sub-menu-list'>
+                <li>
+                  <a href="/service">售后服务</a>
+                </li>
+                <li>
+                  <a href="/faq">常见问题</a>
+                </li>
+              </ul>
+            </h3>
+          </li>
+          <li>
+            <h3 class='menu-tit'>
+              关注我们
+              <ul class='sub-menu-list'>
+                <li>
+                  <a id="wechat" href="javascript:void(0)"><span>
+                    官方微信
+                  </span>
+                  <%= image_tag('home/weixin.jpg', :class => 'wx-code', :alt => "官方微信") %>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">新浪微博</a>
+                </li>
+              </ul>
+            </h3>
+          </li>
+        </ul>
+        <div class='contact'>
+          <p class='service'>
+            客服电话
+          </p>
+          <p class='tel'>
+            400-070-5860
+          </p>
+          <p class='time'>
+            周一至周六 9:00-22:00
+          </p>
+        </div>
+      </div>
+      <div class='container footer-icp'>
+        <p>
+          Copyright © 2014 － <%= Date.current.year %> 深圳佳安美
+        </p>
+      </div>
+      <div class='robot' id='robot_box'>
+        <a id='robot_btn'>
+          <%= image_tag('home/chat-btn-bg.png', :alt => "智能客服露露") %>
+        </a>
+        <span>
+          智能客服露露
+        </span>
+      </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function code() {
+        $(".codebox").show();
+    }
+
+    function closes() {
+        $(".codebox").hide();
+    }
+
+    $(function () {
+        $.qReport(1);
+        $('#wechat').mouseover(function (e) {
+           $('img.wx-code').show();
+        });
+        $('#wechat').mouseout(function (e) {
+           $('img.wx-code').show();
+        });
+        $.stellar({
+            horizontalScrolling: false,
+            verticalOffset: 40
+        });
+        var firstHeight = 960;
+        $(window).scroll(function (e) {
+            scrollTop = $(window).scrollTop();
+            if (scrollTop >= firstHeight) {
+                $("#topbar").addClass("topicfixed")
+            } else {
+                if ($("#topbar").hasClass("topicfixed")) {
+                    $("#topbar").removeClass("topicfixed")
+                }
+            }
+
+        })
+    });
+</script>
+
+</body>
+</html>
