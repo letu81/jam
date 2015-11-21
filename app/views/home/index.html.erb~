@@ -2,11 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <meta name="keywords"
-        content="美型,健视网络,mx,MX,lbs,地理位置,交友,iphone,android,app"/>
-  <title>美型-美于身|健于型</title>
-  <meta name="description"
-        content="美型是一款基于地理位置的移动社交软件，你可以通过“美型”认识附近健身的人，免费发送消息、语音、照片、视频以及精准的地理位置和身边的人更好的交流。你可以使用美型展现个人的健身技巧与魅力，丰富自己的社交圈，你可以通过这个平台和自己心仪的健身教练进行预约和沟通，让私人健身教练不再是奢侈的享受，更能服务于大众。“美型”专注于移动互联网，专注于移动社交，专注于社交模式探索并满足健身人群的社交愿望。"/>
+  <title>佳安美</title>
+  <link rel="shortcut icon" href="<%= image_url('jam.ico') %>" />
+  <meta name="keywords" content="佳安美，深圳佳安美，智能家居，指纹锁，密码锁，电子锁" />
+  <meta name="description" content="佳安美，王力，盼盼，天地钩，万能互换，代理，加盟" />   
   <%= stylesheet_link_tag 'home/style' %>
   <%= javascript_include_tag 'home/jquery-1.7.1.min',
                              'home/homeban',
@@ -18,19 +17,7 @@
 </head>
 <body>
 <div class="header" id="topbar">
-  <div class="headercon">
-    <div class="logo">
-      <a href="#" class="background: url(<%= image_path('home/logo.png') %>) no-repeat center">佳安美</a>
-    </div>
-    <ul class="nav">
-      <li><%= link_to('首页', '/home/index') %></li>
-      <li><%= link_to('关于我们', '/home/about') %></li>
-      <li><%= link_to('动态', '/home/dynamic') %></li>
-      <li><%= link_to('商务合作', '/home/contact') %></li>
-      <li><%= link_to('加入我们', '/home/join') %></li>
-    </ul>
-    <div class="clear"></div>
-  </div>
+  <%= render 'share/header' %>
 </div>
 <div class="bnbut">
   <a href="https://itunes.apple.com/app/id937987572" title="苹果下载"><%=image_tag('home/ios.png')%></a>
@@ -90,91 +77,7 @@
 </div>
 <!--footer-->
 <div class="footer">
-  <div class='container footer-info'>
-        <ul class='menu-list'>
-          <li>
-            <h3 class='menu-tit'>
-              关于佳安美
-              <ul class='sub-menu-list'>
-                <li>
-                  <a href="/about">关于佳安美</a>
-                </li>
-                <li>
-                  <a href="/contact">联系我们</a>
-                </li>
-                <li>
-                  <a href="/jobs">诚聘英才</a>
-                </li>
-              </ul>
-            </h3>
-          </li>
-          <li>
-            <h3 class='menu-tit'>
-              佳安美动态
-              <ul class='sub-menu-list'>
-                <li>
-                  <a href="/news">新闻与杂志</a>
-                </li>
-              </ul>
-            </h3>
-          </li>
-          <li>
-            <h3 class='menu-tit'>
-              售后服务
-              <ul class='sub-menu-list'>
-                <li>
-                  <a href="/service">售后服务</a>
-                </li>
-                <li>
-                  <a href="/faq">常见问题</a>
-                </li>
-              </ul>
-            </h3>
-          </li>
-          <li>
-            <h3 class='menu-tit'>
-              关注我们
-              <ul class='sub-menu-list'>
-                <li>
-                  <a id="wechat" href="javascript:void(0)"><span>
-                    官方微信
-                  </span>
-                  <%= image_tag('home/weixin.jpg', :class => 'wx-code', :alt => "官方微信") %>
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)">新浪微博</a>
-                </li>
-              </ul>
-            </h3>
-          </li>
-        </ul>
-        <div class='contact'>
-          <p class='service'>
-            客服电话
-          </p>
-          <p class='tel'>
-            400-070-5860
-          </p>
-          <p class='time'>
-            周一至周六 9:00-22:00
-          </p>
-        </div>
-      </div>
-      <div class='container footer-icp'>
-        <p>
-          Copyright © 2014 － <%= Date.current.year %> 深圳佳安美
-        </p>
-      </div>
-      <div class='robot' id='robot_box'>
-        <a id='robot_btn'>
-          <%= image_tag('home/chat-btn-bg.png', :alt => "智能客服露露") %>
-        </a>
-        <span>
-          智能客服露露
-        </span>
-      </div>
-    </div>
+  <%= render 'share/footer' %>
 </div>
 
 <script type="text/javascript">
@@ -192,7 +95,7 @@
            $('img.wx-code').show();
         });
         $('#wechat').mouseout(function (e) {
-           $('img.wx-code').show();
+           $('img.wx-code').hide();
         });
         $.stellar({
             horizontalScrolling: false,
