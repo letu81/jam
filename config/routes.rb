@@ -13,8 +13,9 @@ Rails.application.routes.draw do
   get 'news' => 'home#news', as: :news
   get 'service' => 'home#service', as: :service
   get 'faq' => 'home#faq', as: :faq
-  get 'agent' =>'home#agent', :as => 'agent'
+  get 'agent' =>'home#agent', as: :agent
   get 'wap' => 'home#wap', as: :wap
   get 'wap' => 'wap#index'
-end
 
+  post 'feedback' => 'home#feedback', as: :feedback
+end

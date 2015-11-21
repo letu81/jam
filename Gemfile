@@ -49,6 +49,7 @@ gem 'execjs'
 gem 'therubyracer'
 gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
 gem 'devise'
+gem 'thin'
 gem 'puma'
 
 gem 'mysql2', '0.3.20'

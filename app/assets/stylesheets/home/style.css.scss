@@ -815,13 +815,12 @@ input, textarea, select {
 .sw_banner {
   height: 600px;
   position: relative;
-  background: asset_data_url('home/bannerbg3.png') no-repeat center
 }
 
 .sw_banner .sw_text {
   width: 1000px;
   position: absolute;
-  top: 290px;
+  top: 200px;
   left: 50%;
   text-align: center;
   line-height: 28px;
@@ -884,6 +883,25 @@ input, textarea, select {
   color: #00c6ff;
 }
 
+.affairs .sw {
+  float: left;
+  width: 1000px;
+  padding-left: 40px;
+  font-size: 16px;
+}
+
+.affairs .sw dl {
+  padding: 10px 0;
+}
+
+.affairs .sw p {
+  padding: 10px 0
+}
+
+.affairs .sw dl dt {
+  color: #00c6ff;
+}
+
 .affairs .sw_r {
   float: right;
   width: 500px;
@@ -925,11 +943,28 @@ input, textarea, select {
   cursor: pointer
 }
 
-.jr_banner {
-  background: asset_data_url('home/bannerbg4.png') no-repeat center
+.jb_banner {
+  background: asset_data_url('home/bannerbg10.jpg') no-repeat center
+}
+
+.dy_banner {
+  height: 600px;
+  background: asset_data_url('home/bannerbg7.png') no-repeat center
 }
 
 .gy_banner {
+  background: asset_data_url('home/bannerbg8.png') no-repeat center
+}
+
+.jr_banner {
+  background: asset_data_url('home/bannerbg6.jpg') no-repeat center
+}
+
+.fq_banner {
+  background: asset_data_url('home/bannerbg9.jpg') no-repeat center
+}
+
+.sv_banner {
   background: asset_data_url('home/bannerbg5.png') no-repeat center
 }
 
@@ -1040,3 +1075,85 @@ input, textarea, select {
   display: table;
   text-align: right;
 }
+
+.content {
+  background-color: #FFFFFF;
+  margin-bottom: 3.75em;
+     -moz-box-shadow: 0 0 0.3125em 0 #c8c8c8;   
+  -webkit-box-shadow: 0 0 0.3125em 0 #c8c8c8;        
+          box-shadow: 0 0 0.3125em 0 #c8c8c8;  
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=120, Color='#040000";  
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=120, Color='#c8c8c8');
+  border: 1px solid #c8c8c8;
+}
+
+.cus_serv{
+  margin: 6% 6% 10%;
+}
+
+.cus_serv img{
+  width: 100%;
+  margin: 4% 0 7%;
+}
+
+.cus_serv .block{
+  padding-bottom: 5%;
+}
+
+.cus_serv .block p{
+  font-size: 1.25em;
+  border-bottom: 1px solid #cccccc;
+  padding:2% 0;
+  color: #333333;
+}
+
+.cus_serv .con_info{
+  margin-top:2%;
+}
+
+.cus_serv .con_info li{
+  padding: 1% 0;
+  font-size: 1em;
+  color: #666666;
+}
+
+.promise{
+  /*border: 1px solid red;*/
+  width: 100%;
+  height: 265px;
+}
+
+.promise div{
+  height: 270px;
+  /* height: 100%; */
+  /* padding: 3%;*/
+}
+
+.promise ul li{
+  float: left;
+  width: 33%;
+  border-left: 1px solid #cccccc;
+  border-bottom: none;
+  text-align: center;
+}
+
+.promise ul li:first-child{
+  border-left:none;
+}
+
+.promise img{
+  float: left;
+  width: 20%;
+  margin-left: 38%;
+  margin-top: 13%;
+}
+
+.cus_serv .block p.prop{
+  float: left;
+  width: 100%;
+  padding-bottom: 15%;
+  border-bottom: none;
+}
+
+
+
