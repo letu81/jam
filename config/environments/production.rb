@@ -24,26 +24,9 @@ Rails.application.configure do
   # Apache or NGINX already handles this.
   config.serve_static_files = true
 
-  config.assets.precompile += %w(service.css
-   wap/wap.css
-   home/style.css
-   style.css
-
-   home/jquery.touchSlider.js
-   home/jquery-1.7.1.min.js
-   home/homeban.js
-   home/plus2015.js
-   home/stellar.js
-   home/home.js
-
-   wap/jquery.min.js
-   wap/jquery.modal.js
-   wap/swiper.min.js
-  )
-
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
-  # config.assets.css_compressor = :sass
+  config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false

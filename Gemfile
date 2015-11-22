@@ -49,7 +49,6 @@ gem 'execjs'
 gem 'therubyracer'
 gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
 gem 'devise'
-gem 'thin'
 gem 'puma'
 gem "dalli"
 
@@ -83,11 +82,9 @@ gem 'ya2yaml'
 # gem 'lograge'
 # gem 'fluent-plugin-parser'
 # gem 'fluent-plugin-mongo'
-#whenever
 gem 'whenever'
 gem 'harmonious_dictionary'
 gem 'rqrcode'
 gem 'rqrcode_png'
 
 gem 'actionpack-page_caching'
-

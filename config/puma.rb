@@ -20,8 +20,8 @@ stdout_redirect "#{application_path}/log/puma.stdout.log", "#{application_path}/
 #
 # The default is “0, 16”.
 #
-# threads 0, 16
-
+threads 4, 16
+workers 4
 # Bind the server to “url”. “tcp://”, “unix://” and “ssl://” are the only
 # accepted protocols.
 #
