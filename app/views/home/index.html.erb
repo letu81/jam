@@ -99,10 +99,14 @@
         $(window).scroll(function (e) {
             scrollTop = $(window).scrollTop();
             if (scrollTop >= firstHeight) {
-                $("#topbar").addClass("topicfixed")
+                $("#topbar").addClass("topicfixed");
+                $("#topbar .logo a").removeClass("white");
+                $("#topbar .logo a").addClass("blue");
             } else {
                 if ($("#topbar").hasClass("topicfixed")) {
-                    $("#topbar").removeClass("topicfixed")
+                    $("#topbar").removeClass("topicfixed");
+                    $("#topbar .logo a").removeClass("blue");
+                    $("#topbar .logo a").addClass("white");
                 }
             }
 

@@ -29,5 +29,22 @@ module Szjam
     config.time_zone = 'Beijing'
     config.i18n.default_locale = 'zh-CN'
     config.active_job.queue_adapter = :sidekiq
+    config.assets.version = '1.0'
+    config.assets.precompile += %w(service.css
+	 wap/wap.css
+	 home/style.css
+	 style.css
+
+	 home/jquery.touchSlider.js
+	 home/jquery-1.7.1.min.js
+	 home/homeban.js
+	 home/plus2015.js
+	 home/stellar.js
+	 home/home.js
+
+	 wap/jquery.min.js
+	 wap/jquery.modal.js
+	 wap/swiper.min.js
+ 	)
   end
 end

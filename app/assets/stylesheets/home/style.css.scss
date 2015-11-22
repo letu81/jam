@@ -184,9 +184,10 @@ input, textarea, select {
 .logo {
   float: left;
   width: 268px;
+  padding: -20px 0 0;
 }
 
-.logo a span.blue {
+.logo a.blue {
   display: block;
   overflow: hidden;
   width: 268px;
@@ -195,7 +196,6 @@ input, textarea, select {
   font-size: 48px;
   color: #13eaa4;
   margin: 0;
-  padding: 10px 0 0;
 }
 
 .logo a.white {

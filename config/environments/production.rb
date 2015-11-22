@@ -22,7 +22,24 @@ Rails.application.configure do
 
   # Disable serving static files from the `/public` folder by default since
   # Apache or NGINX already handles this.
-  config.serve_static_files = ENV['RAILS_SERVE_STATIC_FILES'].present?
+  config.serve_static_files = true
+
+  config.assets.precompile += %w(service.css
+   wap/wap.css
+   home/style.css
+   style.css
+
+   home/jquery.touchSlider.js
+   home/jquery-1.7.1.min.js
+   home/homeban.js
+   home/plus2015.js
+   home/stellar.js
+   home/home.js
+
+   wap/jquery.min.js
+   wap/jquery.modal.js
+   wap/swiper.min.js
+  )
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier

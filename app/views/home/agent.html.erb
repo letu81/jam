@@ -14,9 +14,11 @@
   <%= render 'share/header' %>
 </div>
 <!--banner-->
+<% cache("banner/agent") do %>
 <div class="sw_banner jr_banner">
   <div class="tel"><em>加盟热线 400-070-5860</em></div>
 </div>
+<% end %>
 
 <div class="affairs">
   <div class="sw">
