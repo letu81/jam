@@ -51,6 +51,7 @@ gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
 gem 'devise'
 gem 'thin'
 gem 'puma'
+gem "dalli"
 
 gem 'mysql2', '0.3.20'
 gem 'faraday'

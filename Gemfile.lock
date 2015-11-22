@@ -139,6 +139,7 @@ GEM
     concurrent-ruby (1.0.0)
     connection_pool (2.2.0)
     daemons (1.2.3)
+    dalli (2.7.4)
     debug_inspector (0.0.2)
     devise (3.5.2)
       bcrypt (~> 3.0)
@@ -312,6 +313,7 @@ DEPENDENCIES
   carrierwave!
   ckeditor!
   coffee-rails (~> 4.1.0)
+  dalli
   devise
   execjs
   fancybox2-rails (~> 0.2.8)
