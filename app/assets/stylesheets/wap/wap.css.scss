@@ -6,7 +6,7 @@
   width: 640px;
   background-size: 33px 33px;
   height: 45px;
-  background: #234969 asset-data-url('wap/logo.png') center 7px no-repeat;
+  background: #234969  center 7px no-repeat;
   background-size: 33px 33px;
   top: 0px;
   z-index: 3;
@@ -28,8 +28,19 @@
   padding-left: 10px;
 }
 
+.header-top .white {
+  display: block;
+  overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'ZagBoldRegular', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  font-size: 32px;
+  color: #fff;
+  margin: 0;
+}
+
 .swiperbj-a {
-  background: asset-data-url('wap/bj_01.jpg') 50% 0 no-repeat;
+  background: asset-data-url('wap/bj_01.jpg') 100% 0 no-repeat;
   background-size: cover;
 }
 

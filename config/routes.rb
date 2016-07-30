@@ -15,7 +15,8 @@ Rails.application.routes.draw do
   get 'faq' => 'home#faq', as: :faq
   get 'agent' =>'home#agent', as: :agent
   get 'wap' => 'home#wap', as: :wap
-  get 'wap' => 'wap#index'
+
+  get 'download' => 'download#index', as: :download
 
   post 'feedback' => 'home#feedback', as: :feedback
 end
