@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0 , maximum-scale=1.0, user-scalable=0">
   <%= stylesheet_link_tag 'wap/wap', media: 'all', 'data-turbolinks-track' => true %>
-  <title><%= @dynamic.nil? ? "健身手机版" : @dynamic.dynamic_film.title %></title>
+  <title>佳安美智控</title>
   <style>
       .bottomSection {
           position: fixed;
@@ -127,40 +127,9 @@
       }
   </style>
 </head>
-<% if @actor.nil? %>
-    <body class="bg">
-    <div class="homebg"><%= yield %></div>
-    </body>
-<% else %>
-    <body>
-    <header>
-      <dl>
-        <dt><%= image_tag('wap/logo.png') %></dt>
-      </dl>
-    </header>
-    <div class="wrap">
-      <dl class="xinxi">
-        <dt>
-        <div class="tx">
-          <%= image_tag(@actor.avatar.thumb.url, alt: '用户头像 ', width: 130, height: 130) %>
-        </div>
-        <div class="xm">
-          <em><%= @actor.name %></em>
-          <i> <%= @actor.gender.eql?(0) ? image_tag('wap/boy.png', alt: '男') : image_tag('wap/girl.png', alt: '女') %></i>
-        </div>
-        </dt>
-        <dd><a href="#"><%= image_tag('wap/dynamic.png') %></a></dd>
-      </dl>
-      <%= yield %>
-    </div>
-    <div class="bottomSection J_bottomSection" style="">
-      <div class="bottomSectionWrap bottomView1">
-        <a class="dl clkstat" id="dl2" href="http://www.e-mxing.com/download" objtype="h5_22">
-          <b class="bottomSectionClose J_bottomSectionClose clkstat" objtype="h5_24" onclick="closePopAdSection(event)"></b>
-          <i class="iopen">立即下载</i><i class="adLogo"><%= image_tag('logo.png') %></i>
-          <span class="fnt"><span class="tit">美于身 健于型</span><span class="char">立即下载美型客户端&gt;</span></span></a>
-      </div>
-    </div>
-    </body>
-<% end %>
+
+<body class="bg">
+  <div class="homebg"><%= yield %></div>
+</body>
+
 </html>
