@@ -20,13 +20,8 @@
   <%= render 'share/header' %>
 </div>
 <div class="bnbut">
-  <div class="codebox" style="display:none">
-    <em onClick="closes()" class="close">关闭</em>
-    <dl>
-      <dt><img src="<%= image_path('home/code1.png') %>"><em>用户端</em></dt>
-      <dd><img src="<%= image_path('home/code2.png') %>"><em>私教端</em></dd>
-    </dl>
-  </div>
+  <a href="https://itunes.apple.com/app/idxxxxxx" title="苹果下载"><%= image_tag('home/ios.png') %></a>
+  <a href="/download" title="安卓下载"><%= image_tag('home/android.png') %></a>
 </div>
 <!--banner-->
 <div class="main_visual">
@@ -39,9 +34,9 @@
   </div>
   <div class="main_image">
     <ul>
-      <li><span style="background: url(<%=image_path('home/banner_01.png')%>) no-repeat center"></span></li>
-      <li><span style="background: url(<%=image_path('home/banner_02.png')%>) no-repeat center"></span></li>
-      <li><span style="background: url(<%=image_path('home/banner_03.png')%>)  no-repeat center"></span></li>
+      <li><span style="background: url(<%=image_path('home/slider01.jpg')%>) no-repeat center"></span></li>
+      <li><span style="background: url(<%=image_path('home/slider02.jpg')%>) no-repeat center"></span></li>
+      <li><span style="background: url(<%=image_path('home/slider03.jpg')%>)  no-repeat center"></span></li>
     </ul>
   </div>
   <a href="javascript:;" id="btn_prev"></a>
@@ -49,22 +44,27 @@
 </div>
 <!--banner End-->
 <div class="activebg onebg" data-stellar-background-ratio="0.05"></div>
-<div style="height: 680px;background: url(<%=image_path('home/picture_01.png')%>) no-repeat center">
+<div style="height: 680px;background: url(<%=image_path('home/picture_01.jpg')%>) no-repeat center">
   <div style=" width: 1200px;
           height: 680px;
-          background: url(<%=image_path('home/picture_01.png')%>) no-repeat center"></div>
+          background: url(<%=image_path('home/picture_01.jpg')%>) no-repeat center">
+    <div style="width: 1140px;position: relative;
+  left: 50%; margin-left: -570px; font-size:42px; top: 270px;">
+      <span>wssss</span>
+    </div>
+  </div>
 </div>
 <div class="activebg twobg" data-stellar-background-ratio="0.05"></div>
-<div style="height: 680px;background: url(<%=image_path('home/picture_02.png')%>) no-repeat center">
+<div style="height: 680px;background: url(<%=image_path('home/picture_02.jpg')%>) no-repeat center">
   <div style=" width: 1200px;
           height: 680px;
-          background: url(<%=image_path('home/picture_02.png')%>) no-repeat center"></div>
+          background: url(<%=image_path('home/picture_02.jpg')%>) no-repeat center"></div>
 </div>
 <div class="activebg thirdbg" data-stellar-background-ratio="0.05"></div>
-<div style="height: 680px;background: url(<%=image_path('home/picture_03.png')%>) no-repeat center">
+<div style="height: 680px;background: url(<%=image_path('home/picture_03.jpg')%>) no-repeat center">
   <div style=" width: 1200px;
           height: 680px;
-          background: url(<%=image_path('home/picture_03.png')%>) no-repeat center"></div>
+          background: url(<%=image_path('home/picture_03.jpg')%>) no-repeat center"></div>
 </div>
 <!--footer-->
 <div class="footer">
