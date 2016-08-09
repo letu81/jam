@@ -1,9 +1,9 @@
 source 'https://ruby.taobao.org'
 
-ruby '2.2.1'
+ruby '2.3.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.4'
-# Use SCSS for stylesheets
+gem 'rails', '4.2.6'
+# Use SCSS for stylesheets4
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
